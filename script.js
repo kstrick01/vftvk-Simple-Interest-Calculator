@@ -9,7 +9,7 @@ function compute()
  
         if(principal.value <= 0){
             alert("Please enter a positive number");
-            principal.focus();
+            document.getElementById("principal").focus(); 
              }else{
                 alert("success");
              }
