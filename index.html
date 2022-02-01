@@ -5,13 +5,13 @@
         <script src="script.js/"></script>
         <link rel="stylesheet" href="style.css">
         </head>
+            <body>
            <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
-        <body>
             <div>
             Amount <input type="number"  id="principal">  <br/>
             Rate <input type="range" id="rate" min="1" max="20" step=".25" value="10.25" onchange="updateRate()">
-            <span id="rate_val">10.25% </span>
+            <span id="rate_val"> 10.25% </span>
              <br/>
             No. of Years<select id= "years"> <option value="1">1</option> 
             <option value="2">2</option> 
@@ -25,14 +25,12 @@
             <option value="10">10</option> 
             </select><br/>
             Interest :  <br>
-            
-                        <button onclick= "compute()">
+ 
+             <button onclick= "compute()">
             Compute Interest
-            </button>
-            <span id="results">
-            </span>
-
-            </div>  
+             </button>
+            <span id="result"></span>
+             </div>             
          </body>
         <footer>
         &#169; This Calculator belongs to Keegan Strickland
